@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ａｓｔｈｔｃ</string>
+    <string name="not_aesthetic">so. not. aesthetic.</string>
+    <string name="boring_text">Boring Text</string>
+    <string name="bettertextlabel">ｂｅｔｔｅｒ ｔｅｘｔ</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="popout_menu">Popout Menu</string>
+    <string name="set_notification">Set Notification</string>
+    <string name="remove_notification">Remove Notification</string>
+</resources>

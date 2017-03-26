@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_selector"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context="io.github.datwheat.asthtc.MainActivity">
+
+        <EditText
+            android:id="@+id/boringEditText"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/not_aesthetic"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107"/>
+
+        <TextView
+            android:id="@+id/boringTextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/boring_text"
+            android:textAllCaps="true"
+            android:textColor="#7dffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/boringEditText"
+            app:layout_constraintLeft_toLeftOf="@+id/boringEditText"
+            tools:text="Boring Text"/>
+
+        <TextView
+            android:id="@+id/betterTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/bettertextlabel"
+            android:textAllCaps="true"
+            android:textColor="#7dffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/boringEditText"
+            app:layout_constraintTop_toBottomOf="@+id/boringEditText"
+            tools:text="ｂｅｔｔｅｒ ｔｅｘｔ"/>
+
+        <TextView
+            android:id="@+id/betterTextView"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/betterTextLabel"
+            app:layout_constraintTop_toBottomOf="@+id/betterTextLabel"
+            tools:text="ａｅｓｔｈｅｔｉｃ"/>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/copy_to_clipboard"
+            android:textColor="#7dffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/betterTextView"
+            tools:text="Copy to clipboard"/>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/popout_menu"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more_vert_white_24dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
