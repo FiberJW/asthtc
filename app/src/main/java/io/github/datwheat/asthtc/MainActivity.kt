@@ -12,13 +12,14 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.PopupMenu
 import android.util.Log
-import android.widget.*
+import android.widget.Toast
 import com.ibm.icu.text.Transliterator
 import com.jakewharton.rxbinding2.view.RxView
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.jakewharton.rxbinding2.widget.TextViewTextChangeEvent
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 
@@ -31,12 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         val t = Transliterator.getInstance("Halfwidth-Fullwidth")
 
-        val editText = findViewById(R.id.boringEditText) as EditText
-        val betterTextView = findViewById(R.id.betterTextView) as TextView
-        val moreButton = findViewById(R.id.imageButton) as ImageButton
-        val copyToClipboardButton = findViewById(R.id.button) as Button
-
-        RxTextView.textChangeEvents(editText)
+        RxTextView.textChangeEvents(boringEditText)
                 .subscribe(object : Observer<TextViewTextChangeEvent> {
                     override fun onSubscribe(d: Disposable) {
                         Log.i(TAG, "onSubscribe: Yee weouchea")
