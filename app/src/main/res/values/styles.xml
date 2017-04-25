@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/majorelle_blue</item>
         <item name="colorPrimaryDark">@color/majorelle_blue</item>
         <item name="colorAccent">@color/medium_orchid</item>
-
+        <item name="android:windowBackground">@drawable/launch_screen</item>
         <item name="android:textColorHint">#a5ffffff</item>
     </style>
 
