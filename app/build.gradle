@@ -14,8 +14,8 @@ android {
         applicationId "io.github.datwheat.asthtc"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 5
-        versionName "0.1.4"
+        versionCode 6
+        versionName "0.1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -46,27 +46,6 @@ dependencies {
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
     testCompile 'junit:junit:4.12'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    // Litho
-    compile 'com.facebook.litho:litho-core:0.2.0'
-    compile 'com.facebook.litho:litho-widget:0.2.0'
-    provided 'com.facebook.litho:litho-annotations:0.2.0'
-
-    annotationProcessor 'com.facebook.litho:litho-processor:0.2.0'
-
-    // SoLoader
-    compile 'com.facebook.soloader:soloader:0.2.0'
-
-    // Optional
-    // For debugging
-    debugCompile 'com.facebook.litho:litho-stetho:0.2.0'
-
-    // For integration with Fresco
-    debugCompile 'com.facebook.litho:litho-fresco:0.2.0'
-
-    // For testing
-    testCompile('com.facebook.litho:litho-testing:0.2.0', {
-        exclude group: 'com.google.code.findbugs', module: 'jsr305'
-    })
 }
 repositories {
     mavenCentral()

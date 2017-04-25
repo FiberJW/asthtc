@@ -150,5 +150,4 @@ class MainActivity : AppCompatActivity() {
     companion object {
         val NOTI_ID = "NOTI_ID"
     }
-
 }
